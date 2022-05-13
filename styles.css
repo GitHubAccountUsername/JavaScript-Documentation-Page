@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: minmax(205px, auto) 1fr;
+    grid-template-areas: "navbar maindoc";
+    grid-gap: 0 px;
+    border: 1px solid red;
+    
+}
+#navbar{
+    grid-area: navbar;
+    position: fixed;    
+    border: 1px solid red;  
+}
+#main-doc{
+    grid-area: maindoc;
+    border: 1px solid red;
+    padding: 20px;
+    
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#navbar ul a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding: 1px;
+    margin: 1px 0;
+     
+     
+}
+
+#navbar ul li {
+    border: 1px solid black;
+    
+    width: 100%;
+    padding: 0px;
+    
+    
+}
+code {
+    display: block;
+    color: red;
+    background-color: yellowgreen;
+    padding: 2px;
+}
+@media screen and (max-width: 750px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "navbar" "maindoc";        
+    }
+    #navbar {
+        position: inherit;
+    }
+
+    
+}
