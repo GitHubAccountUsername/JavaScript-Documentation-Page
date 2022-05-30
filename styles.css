@@ -6,20 +6,16 @@ body {
     display: grid;
     grid-template-columns: minmax(205px, auto) 1fr;
     grid-template-areas: "navbar maindoc";
-    grid-gap: 0 px;
-    border: 1px solid red;
-    
+    grid-gap: 5px;    
 }
 #navbar{
     grid-area: navbar;
     position: fixed;    
-    border: 1px solid red;  
+    border: 5px solid black;  
 }
 #main-doc{
     grid-area: maindoc;
-    border: 1px solid red;
     padding: 20px;
-    
 }
 
 header {
@@ -45,12 +41,14 @@ header {
     
 }
 code {
+    border: 1px solid black;
+    box-shadow: 5px 5px;
     display: block;
-    color: red;
+    color: black;
     background-color: yellowgreen;
     padding: 2px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 480px) {
     body {
         display: grid;
         grid-template-columns: 1fr;
